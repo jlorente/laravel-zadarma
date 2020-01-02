@@ -100,7 +100,7 @@ should return a string with the message to be sent on the SMS:
  * @param  mixed  $notifiable
  * @return string
  */
-public function toZadarma($notifiable)
+public function toZadarmaSms($notifiable)
 {
     return 'Hello, this is an SMS sent through Zadarma API';
 }
@@ -190,8 +190,6 @@ class User extends Authenticatable
     }
 }
 ```
-
-You can find more info about Laravel notifications in [this page](https://laravel.com/docs/5.6/notifications).
 
 ## License 
 Copyright &copy; 2019 José Lorente Martín <jose.lorente.martin@gmail.com>.

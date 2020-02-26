@@ -51,7 +51,13 @@ return [
 ];
 ```
 
-3. Set the api_key in the config/zadarma.php file or use the predefined env 
+3. Publish the package configuration file.
+
+```bash
+$ php artisan vendor:publish --provider='Jlorente\Laravel\Zadarma\ZadarmaServiceProvider'
+```
+
+4. Set the api_key and api_secret in the config/zadarma.php file or use the predefined env 
 variables.
 
 config/zadarma.php
